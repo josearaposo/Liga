@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('gols', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('partido_id')->constrained();
+            $table->foreignId('jugador_id')->constrained('jugadores');
+            $table->integer('minuto');
             $table->timestamps();
         });
     }
