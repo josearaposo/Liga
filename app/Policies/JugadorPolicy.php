@@ -13,7 +13,7 @@ class JugadorPolicy
      */
     public function viewAny(User $user): bool
     {
-        //
+        return true;
     }
 
     /**
@@ -21,7 +21,7 @@ class JugadorPolicy
      */
     public function view(User $user, Jugador $jugador): bool
     {
-        //
+        return true;
     }
 
     /**
@@ -29,7 +29,7 @@ class JugadorPolicy
      */
     public function create(User $user): bool
     {
-        //
+        return true;
     }
 
     /**
@@ -37,7 +37,7 @@ class JugadorPolicy
      */
     public function update(User $user, Jugador $jugador): bool
     {
-        //
+        return true;
     }
 
     /**
@@ -45,7 +45,7 @@ class JugadorPolicy
      */
     public function delete(User $user, Jugador $jugador): bool
     {
-        //
+        return true;
     }
 
     /**
@@ -53,7 +53,7 @@ class JugadorPolicy
      */
     public function restore(User $user, Jugador $jugador): bool
     {
-        //
+        return true;
     }
 
     /**
@@ -61,6 +61,6 @@ class JugadorPolicy
      */
     public function forceDelete(User $user, Jugador $jugador): bool
     {
-        //
+        return true;
     }
 }

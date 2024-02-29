@@ -13,6 +13,8 @@ return new class extends Migration
     {
         Schema::create('partidos', function (Blueprint $table) {
             $table->id();
+            $table->dateTime('fecha');
+            $table->foreignId('estadio_id')->constrained();
             $table->timestamps();
         });
     }
